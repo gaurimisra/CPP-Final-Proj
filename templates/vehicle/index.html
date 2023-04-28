@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <style media="screen">
+    </style>
+  </head>
+
+  <body
+    style="
+      background-image: url('{% static 'images/Repair1.jpg' %}');
+      background-size: cover;
+      background-repeat: no-repeat;
+    "
+  >
+    {% include "vehicle/navbar.html" %}
+    <br /><br />
+
+    {% include "vehicle/footer.html" %}
+  </body>
+</html>

@@ -1,0 +1,34 @@
+{% extends 'vehicle/customerbase.html' %} {% load static %} {% block content %}
+
+<!-- main content -->
+<div class="wrapper" style="background-color: transparent;">
+  <!-- ****** cards start ********** -->
+  <div class="row">
+    <div class="col-3 col-m-6 col-sm-6">
+      <div class="counter" style="background-color: #1919199c">
+        <h3>{{new_request_made}}</h3>
+        <p>New Request Made</p>
+      </div>
+    </div>
+    <div class="col-3 col-m-6 col-sm-6">
+      <div class="counter" style="background-color: #1919199c">
+        <h3>{{work_in_progress}}</h3>
+        <p>Vehicle Repair In Progress</p>
+      </div>
+    </div>
+    <div class="col-3 col-m-6 col-sm-6">
+      <div class="counter" style="background-color: #1919199c">
+        <h3>{{work_completed}}</h3>
+        <p>Vehicle Repaired</p>
+      </div>
+    </div>
+    <div class="col-3 col-m-6 col-sm-6">
+      <div class="counter" style="background-color: #1919199c">
+        <h3>{{bill}}</h3>
+        <p>Total Bill</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end main content -->
+{% endblock content %}

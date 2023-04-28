@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+    html, body {
+      height: 100%;
+    }
+
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+  </style>
+
+</head>
+
+<body
+style="
+background-image: url('{% static 'images/Repair1.jpg' %}');
+background-size: cover;
+background-repeat: no-repeat;
+"
+>
+
+  {% include "vehicle/navbar.html" %}
+  <br><br>
+  <div class="jumbotron" style="margin-bottom:0px; background-color: #2e485ea6; height: 100%;">
+    <h1 class="display-4" style="color: white;">Welcome Mechanics</h1>
+    <p class="lead" style="color: white;">Welcome to Repair Hub</p>
+    <hr class="my-4">
+    <p style="color: white;">You can access the services after Login</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="mechanicsignup" role="button" style="background: black; border: black;">Apply for Job</a>
+      <a class="btn btn-primary btn-lg" href="mechaniclogin" role="button" style="background: black; border: black;">Login</a>
+    </p>
+  </div>
+  {% include "vehicle/footer.html" %}
+</body>
+</html>
